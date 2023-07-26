@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    // kotlin-kapt throught hilt, generate code in background
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'com.example.evitastore'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.evitastore"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        //it's necesary get this java's version in order to user Dagger Hilt
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures{
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //Test Librarys
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //ViewModel aris: 2.3.1 Stable version: 2.5.1
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    //LiveData aris: 2.3.1 -> I don't know if this is the last version, but it works
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+    //Fragment aris: 1.3.2 - Default autocompleted: 1.5.7
+    implementation "androidx.fragment:fragment-ktx:1.5.7"
+    //Activity aris: 1.2.2 stable version: 1.6.1
+    implementation "androidx.activity:activity-ktx:1.6.1"
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
+    //dagger hilt aris: 2.35 - I believe this is a stable version
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    //Room
+    implementation "androidx.room:room-ktx:2.5.1"
+    kapt "androidx.room:room-compiler:2.5.1"
+}
