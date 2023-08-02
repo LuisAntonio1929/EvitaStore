@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">EvitaStore</string>
+    <string name="app_name">Bodega Katherine</string>
+    <string name="login_email_hint">Correo electronico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_password_repeat_hint">Repetir contraseña</string>
+    <string name="login_btn_sign_up">Crear cuenta nueva</string>
+    <string name="login_btn_sign_in">Iniciar sesión</string>
+    <string name="dialog_success_title">App completa!</string>
+    <string name="dialog_success_body">Esta es una app con arquitectura y buenas practicas de software</string>
+    <string name="dialog_success_positive">Gracias!</string>
+    <string name="signup_error_dialog_title">Ha ocurrido un error</string>
+    <string name="signup_error_dialog_body">No hemos podido crear tu cuenta, inténtalo de nuevo más tarde</string>
+    <string name="signup_error_dialog_positive_action">Okey :(</string>
+    <string name="signup_error_mail">El email no es válido</string>
+    <string name="signup_error_password">Las 2 contraseñas debes ser iguales</string>
+    <string name="login_error_mail">El email no es válido</string>
+    <string name="login_error_password">Debe contener al menos 6 caracteres</string>
+    <string name="login_error_dialog_title">No hemos encontrado el usuario</string>
+    <string name="login_error_dialog_body">Verifique los datos o vuelva a intentarlo</string>
+    <string name="login_error_dialog_negative_action">Cancelar</string>
+    <string name="login_error_dialog_positive_action">Reintentar</string>
 </resources>

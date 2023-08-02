@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "735068519469",
+    "firebase_url": "https://evita-b949d.firebaseio.com",
+    "project_id": "evita-b949d",
+    "storage_bucket": "evita-b949d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735068519469:android:34997e639de818b542cca4",
+        "android_client_info": {
+          "package_name": "com.brianchuquiruna.evitastore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735068519469-52290tq6tqvt8n6urggem28nco95bosg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfpr38OA60UC6wc9ejCfx_CylO5G7ay9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735068519469-52290tq6tqvt8n6urggem28nco95bosg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

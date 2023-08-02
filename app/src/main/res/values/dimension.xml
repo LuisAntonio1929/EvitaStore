@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_padding">16dp</dimen>
+    <dimen name="login_et_height_box">64dp</dimen>
+    <dimen name="login_logo_dimen">300dp</dimen>
+    <dimen name="btn_radius">16dp</dimen>
+    <dimen name="linear_layout_general_margin">16dp</dimen>
+</resources>
